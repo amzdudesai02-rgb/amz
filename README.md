@@ -1,5 +1,9 @@
 # AMZDudes Automation Platform
 
+[![Frontend CI](https://github.com/amzdudesai02-rgb/amz/workflows/Frontend%20CI%2FCD/badge.svg)](https://github.com/amzdudesai02-rgb/amz/actions)
+[![Backend CI](https://github.com/amzdudesai02-rgb/amz/workflows/Backend%20CI%2FCD/badge.svg)](https://github.com/amzdudesai02-rgb/amz/actions)
+[![Full CI](https://github.com/amzdudesai02-rgb/amz/workflows/Full%20CI%2FCD%20Pipeline/badge.svg)](https://github.com/amzdudesai02-rgb/amz/actions)
+
 A professional automation platform landing page showcasing multiple automation tools with a modern, scalable design. Built with Next.js 14 (Frontend) and Python FastAPI (Backend).
 
 ## 🚀 Features
@@ -191,6 +195,9 @@ Modify `backend/api/tools.py` or `frontend/app/api/` routes to add custom busine
 
 - [Backend Documentation](./BACKEND_README.md) - Python FastAPI backend details
 - [Deployment Guide](./DEPLOYMENT.md) - Detailed deployment instructions
+- [CI/CD Setup Guide](./CI_CD_SETUP.md) - GitHub Actions CI/CD configuration
+- [CI/CD Pipeline](./CI_CD_README.md) - Continuous Integration/Deployment setup
+- [Project Structure](./STRUCTURE.md) - Detailed project organization
 
 ## 🛡️ License
 
