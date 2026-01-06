@@ -1,10 +1,12 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function Logo({ className = '', showTagline = true, size = 'default' }: { className?: string; showTagline?: boolean; size?: 'default' | 'small' | 'large' }) {
   const sizeClasses = {
-    default: 'text-3xl md:text-4xl',
-    small: 'text-2xl md:text-3xl',
-    large: 'text-4xl md:text-5xl'
+    default: { width: 180, height: 60 },
+    small: { width: 120, height: 40 },
+    large: { width: 240, height: 80 }
   }
   
   const taglineSizeClasses = {
@@ -13,34 +15,21 @@ export default function Logo({ className = '', showTagline = true, size = 'defau
     large: 'text-sm md:text-base'
   }
 
+  const dimensions = sizeClasses[size]
+
   return (
     <div className={`flex flex-col items-start ${className}`}>
-      {/* Main Logo */}
-      <div className={`flex items-center gap-0 leading-none ${sizeClasses[size]}`}>
-        {/* "amz" part - solid vibrant blue */}
-        <span 
-          className="font-bold tracking-tight relative"
-          style={{ color: '#2563eb' }} // vibrant blue-600
-        >
-          <span className="relative z-10">amz</span>
-          {/* Stylized 'a' with arrow effect */}
-          <span 
-            className="absolute left-0 bottom-0 w-2 h-2 border-l-2 border-b-2 border-blue-600 transform rotate-45 -translate-x-0.5 translate-y-0.5 opacity-0 md:opacity-100"
-            style={{ borderColor: '#2563eb' }}
-          ></span>
-        </span>
-        {/* "DUDES" part - outline style with darker indigo blue */}
-        <span 
-          className="font-bold tracking-tight relative ml-0.5"
-          style={{
-            WebkitTextStroke: '2px #1e3a8a', // darker indigo blue-800
-            WebkitTextFillColor: 'transparent',
-            color: 'transparent',
-            letterSpacing: '0.05em'
-          }}
-        >
-          DUDES
-        </span>
+      {/* Logo Image */}
+      <div className="relative" style={{ width: dimensions.width, height: dimensions.height }}>
+        <Image
+          src="/logo.png"
+          alt="amzDUDES - Growth, Commitment, Gratitude"
+          width={dimensions.width}
+          height={dimensions.height}
+          priority
+          className="object-contain"
+          style={{ width: 'auto', height: 'auto' }}
+        />
       </div>
       {/* Tagline */}
       {showTagline && (
