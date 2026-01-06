@@ -19,9 +19,9 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50">
       {/* Header */}
       <header className="border-b border-gray-200/80 bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4">
           <div className="flex items-center justify-between">
-            <Logo />
+            <Logo size="default" showTagline={false} className="flex-shrink-0" />
             <nav className="hidden md:flex items-center gap-8">
               <a href="#tools" className="text-gray-600 hover:text-primary-600 transition-colors font-medium text-sm">
                 Tools
