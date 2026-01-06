@@ -197,6 +197,7 @@ Modify `backend/api/tools.py` or `frontend/app/api/` routes to add custom busine
 - [Deployment Guide](./DEPLOYMENT.md) - Detailed deployment instructions
 - [CI/CD Setup Guide](./CI_CD_SETUP.md) - GitHub Actions CI/CD configuration
 - [Vercel Deployment Guide](./VERCEL_DEPLOYMENT_GUIDE.md) - Step-by-step Vercel deployment instructions
+- [Render Backend Deployment](./RENDER_DEPLOYMENT_GUIDE.md) - Deploy backend to Render
 - [CI/CD Pipeline](./CI_CD_README.md) - Continuous Integration/Deployment setup
 - [Project Structure](./STRUCTURE.md) - Detailed project organization
 
