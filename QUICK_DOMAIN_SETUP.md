@@ -6,9 +6,27 @@
 1. Vercel Dashboard → Your Project → Settings → Domains
 2. Add: `amzdudes.io`
 3. Add: `www.amzdudes.io`
-4. Copy the DNS records shown
+4. Copy the DNS records shown (will show specific values)
 
 ### Step 2: Update DNS in Your Registrar
+
+**If you already have DNS records (like Hostinger):**
+
+1. **Add TXT Record (Verification):**
+   ```
+   Type: TXT
+   Name: _vercel
+   Value: [copy full value from Vercel]
+   ```
+
+2. **Edit Existing WWW CNAME:**
+   - Find your existing `www` CNAME record
+   - Click "Edit"
+   - Change value to: `[copy from Vercel - looks like: dd75ce966cfb977c.vercel-dns-017.com.]`
+   - Save
+
+**If starting fresh:**
+
 1. Login to where you bought `amzdudes.io`
 2. Go to DNS Management / DNS Zone Editor
 3. Add these records:
@@ -17,14 +35,21 @@
 ```
 Type: CNAME
 Name: @ (or leave blank)
-Value: cname.vercel-dns.com
+Value: [copy from Vercel]
 ```
 
 **For WWW:**
 ```
 Type: CNAME
 Name: www
-Value: cname.vercel-dns.com
+Value: [copy from Vercel]
+```
+
+**For Verification:**
+```
+Type: TXT
+Name: _vercel
+Value: [copy from Vercel]
 ```
 
 ### Step 3: Wait & Verify
