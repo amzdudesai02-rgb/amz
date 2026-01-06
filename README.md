@@ -199,6 +199,7 @@ Modify `backend/api/tools.py` or `frontend/app/api/` routes to add custom busine
 - [Vercel Deployment Guide](./VERCEL_DEPLOYMENT_GUIDE.md) - Step-by-step Vercel deployment instructions
 - [Render Backend Deployment](./RENDER_DEPLOYMENT_GUIDE.md) - Deploy backend to Render
 - [Hostinger Backend Deployment](./HOSTINGER_DEPLOYMENT_GUIDE.md) - Deploy backend to Hostinger VPS/Shared Hosting
+- [Domain Setup Guide](./DOMAIN_SETUP_GUIDE.md) - Configure amzdudes.io domain and subdomains
 - [CI/CD Pipeline](./CI_CD_README.md) - Continuous Integration/Deployment setup
 - [Project Structure](./STRUCTURE.md) - Detailed project organization
 
