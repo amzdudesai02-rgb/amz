@@ -196,6 +196,7 @@ Modify `backend/api/tools.py` or `frontend/app/api/` routes to add custom busine
 - [Backend Documentation](./BACKEND_README.md) - Python FastAPI backend details
 - [Deployment Guide](./DEPLOYMENT.md) - Detailed deployment instructions
 - [CI/CD Setup Guide](./CI_CD_SETUP.md) - GitHub Actions CI/CD configuration
+- [Vercel Deployment Guide](./VERCEL_DEPLOYMENT_GUIDE.md) - Step-by-step Vercel deployment instructions
 - [CI/CD Pipeline](./CI_CD_README.md) - Continuous Integration/Deployment setup
 - [Project Structure](./STRUCTURE.md) - Detailed project organization
 
