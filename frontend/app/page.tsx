@@ -160,12 +160,12 @@ export default function Home() {
               <div className="p-2 bg-primary-100 rounded-lg">
                 <Sparkles className="w-6 h-6 text-primary-600" />
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900">About AMZDudes Platform</h3>
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900">About amzDUDES Platform</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                  AMZDudes is a comprehensive automation platform designed to help businesses streamline
+                  amzDUDES is a comprehensive automation platform designed to help businesses streamline
                   their operations and improve efficiency. Our suite of tools covers everything from
                   reimbursement management to CRM automation, all built with modern technology and
                   user-friendly interfaces.
@@ -237,7 +237,7 @@ export default function Home() {
           <div className="border-t border-gray-200 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <span className="text-gray-600 text-sm mb-4 md:mb-0">
-                © 2024 AMZDudes. All rights reserved.
+                © 2024 amzDUDES. All rights reserved.
               </span>
               <div className="flex gap-6">
                 <a href="#" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">
