@@ -1,0 +1,15 @@
+# Hostinger Apache Configuration for FastAPI
+# This file helps route requests to your Python application
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect all requests to your Python application
+# Note: This may need adjustment based on Hostinger's Python setup
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /api/tools [L,QSA]
+
+# Set Python version (if using Hostinger's Python selector)
+# AddHandler python-program .py
+
