@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AMZDudes - Automation Platform',
-  description: 'Professional automation tools for your business needs',
+  title: 'amzDUDES - Automation Platform',
+  description: 'Professional automation tools for your business needs. Growth, commitment, gratitude.',
 }
 
 export default function RootLayout({

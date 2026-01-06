@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import ToolCard from '@/components/ToolCard'
+import Logo from '@/components/Logo'
 import { tools } from '@/lib/tools'
 import { Sparkles, ArrowRight, CheckCircle2, Zap, TrendingUp } from 'lucide-react'
 
@@ -20,14 +21,7 @@ export default function Home() {
       <header className="border-b border-gray-200/80 bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="p-2.5 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl shadow-lg shadow-primary-500/20">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                AMZDudes
-              </h1>
-            </div>
+            <Logo />
             <nav className="hidden md:flex items-center gap-8">
               <a href="#tools" className="text-gray-600 hover:text-primary-600 transition-colors font-medium text-sm">
                 Tools
@@ -215,13 +209,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="p-2 bg-primary-500 rounded-lg">
-                  <Sparkles className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold text-gray-900">AMZDudes</span>
+              <div className="mb-4">
+                <Logo showTagline={true} size="default" />
               </div>
-              <p className="text-gray-600 text-sm max-w-md">
+              <p className="text-gray-600 text-sm max-w-md mt-2">
                 Professional automation platform designed to streamline your business operations
                 and improve efficiency.
               </p>
