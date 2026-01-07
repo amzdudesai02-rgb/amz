@@ -131,3 +131,4 @@ Once verified:
    - Vercel Support: Check domain status in dashboard
    - Hostinger Support: Help with DNS management
 
+
