@@ -27,8 +27,8 @@ export const tools: Tool[] = [
   },
   {
     id: 'crm',
-    name: 'CRM Automation',
-    description: 'Powerful customer relationship management with automated workflows and intelligent insights.',
+    name: 'Wholesale CRM Automation',
+    description: 'Powerful customer relationship management with automated workflows and intelligent insights for wholesale operations.',
     subdomain: 'crm.amzdudes.io',
     status: 'active',
     features: [
