@@ -228,8 +228,8 @@ export default function Home() {
             <div>
               <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">Privacy Policy</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">Terms of Service</a></li>
+                <li><a href="/privacy" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">Privacy Policy</a></li>
+                <li><a href="/terms" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">Terms of Service</a></li>
                 <li><a href="#" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">Cookie Policy</a></li>
               </ul>
             </div>
@@ -237,7 +237,7 @@ export default function Home() {
           <div className="border-t border-gray-200 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <span className="text-gray-600 text-sm mb-4 md:mb-0">
-                © 2024 amzDUDES. All rights reserved.
+                © 2026 AMZDudes. All rights reserved.
               </span>
               <div className="flex gap-6">
                 <a href="#" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">
