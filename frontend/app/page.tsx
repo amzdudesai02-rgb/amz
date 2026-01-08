@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import ToolCard from '@/components/ToolCard'
 import Logo from '@/components/Logo'
 import { tools } from '@/lib/tools'
