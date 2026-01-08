@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { tools as toolsData } from '@/lib/tools'
 
 export interface Tool {
   id: string
@@ -18,8 +19,8 @@ export interface ToolsResponse {
   coming_soon: number
 }
 
-// Fallback to local data if API is not available
-const LOCAL_TOOLS: Tool[] = [
+// Use the centralized tools data from lib/tools.ts
+const LOCAL_TOOLS: Tool[] = toolsData
   {
     id: 'reimbursement',
     name: 'Reimbursement Automation',
