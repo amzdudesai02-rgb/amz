@@ -240,12 +240,12 @@ export default function Home() {
                 © 2026 AMZDudes. All rights reserved.
               </span>
               <div className="flex gap-6">
-                <a href="#" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">
+                <Link href="/privacy" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">
                   Privacy Policy
-                </a>
-                <a href="#" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">
+                </Link>
+                <Link href="/terms" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">
                   Terms of Service
-                </a>
+                </Link>
               </div>
             </div>
           </div>
