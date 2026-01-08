@@ -38,7 +38,7 @@ export default function TermsOfService() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Agreement to Terms</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                By accessing or using the AMZDudes automation platform ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you may not access the Service.
+                By accessing or using the AMZDudes automation platform (&quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you disagree with any part of these terms, you may not access the Service.
               </p>
             </section>
 
@@ -148,7 +148,7 @@ export default function TermsOfService() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">13. Contact Information</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                If you have any questions about these Terms of Service, please contact us at:
+                If you have any questions about these Terms of Service, please contact us:
               </p>
               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                 <p className="text-gray-700 font-medium">AMZDudes</p>
