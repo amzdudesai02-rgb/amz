@@ -44,8 +44,8 @@ export const tools: Tool[] = [
     id: 'sop-hub',
     name: 'SOP Hub',
     description: 'Centralized hub for Standard Operating Procedures with version control and collaboration.',
-    subdomain: 'sop.amzdudes.io',
-    status: 'coming-soon',
+    subdomain: 'sophub.amzdudes.io',
+    status: 'active',
     features: [
       'Document management',
       'Version control',
