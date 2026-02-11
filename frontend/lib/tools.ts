@@ -57,10 +57,10 @@ export const tools: Tool[] = [
   },
   {
     id: 'automation-4',
-    name: 'Automation Tool',
-    description: 'Advanced automation capabilities to streamline your business processes.',
-    subdomain: 'automation.amzdudes.io',
-    status: 'coming-soon',
+    name: 'ClientMax',
+    description: 'Advanced automation capabilities to streamline your business processes with ClientMax.',
+    subdomain: 'clientmax.amzdudes.io',
+    status: 'active',
     features: [
       'Workflow automation',
       'Integration capabilities',
