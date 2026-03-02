@@ -71,5 +71,21 @@ export const tools: Tool[] = [
     icon: 'Zap',
     color: 'bg-orange-500',
   },
+  {
+    id: 'ads-agent',
+    name: 'Ads Agent',
+    description: 'Manage your Amazon Ads with AI: explore campaigns, get insights, and scale to new markets without spreadsheets.',
+    subdomain: 'adsagent.amzdudes.io',
+    status: 'active',
+    features: [
+      'Plain-English campaign exploration',
+      'AI-powered performance insights',
+      'Audience and targeting suggestions',
+      'Rules-based bidding and bid automation',
+      'Creative recommendations across formats',
+    ],
+    icon: 'Zap',
+    color: 'bg-sky-500',
+  },
 ]
 
