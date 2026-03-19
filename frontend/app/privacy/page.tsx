@@ -158,7 +158,7 @@ export default function PrivacyPolicy() {
                 Privacy Policy
               </Link>
               <Link href="/terms" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">
-                Terms of Service
+                End User License Agreement
               </Link>
             </div>
           </div>

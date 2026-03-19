@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 
 export const metadata = {
-  title: 'Terms of Service - AMZDudes',
-  description: 'Terms of Service for AMZDudes Automation Platform',
+  title: 'End User License Agreement - AMZDudes',
+  description: 'End User License Agreement for AMZDudes Automation Platform',
 }
 
 export default function TermsOfService() {
@@ -31,14 +31,14 @@ export default function TermsOfService() {
       {/* Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 md:p-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Terms of Service</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">End User License Agreement</h1>
           <p className="text-gray-600 mb-8">Last updated: January 6, 2026</p>
 
           <div className="prose prose-lg max-w-none">
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Agreement to Terms</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Agreement to License</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                By accessing or using the AMZDudes automation platform (&quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you disagree with any part of these terms, you may not access the Service.
+                By accessing or using the AMZDudes automation platform (&quot;Service&quot;), you agree to be bound by this End User License Agreement (&quot;EULA&quot;). If you disagree with any part of this agreement, you may not access the Service.
               </p>
             </section>
 
@@ -132,9 +132,9 @@ export default function TermsOfService() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Changes to Terms</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Changes to License</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We reserve the right to modify these Terms at any time. We will notify users of any material changes by posting the new Terms on this page and updating the &quot;Last updated&quot; date.
+                We reserve the right to modify this EULA at any time. We will notify users of any material changes by posting the updated agreement on this page and updating the &quot;Last updated&quot; date.
               </p>
             </section>
 
@@ -148,7 +148,7 @@ export default function TermsOfService() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">13. Contact Information</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                If you have any questions about these Terms of Service, please contact us:
+                If you have any questions about this End User License Agreement, please contact us:
               </p>
               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                 <p className="text-gray-700 font-medium">AMZDudes</p>
@@ -172,7 +172,7 @@ export default function TermsOfService() {
                 Privacy Policy
               </Link>
               <Link href="/terms" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">
-                Terms of Service
+                End User License Agreement
               </Link>
             </div>
           </div>
