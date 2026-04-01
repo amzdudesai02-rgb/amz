@@ -15,6 +15,7 @@ const iconMap = {
   Users,
   FileText,
   Zap,
+  Clock,
 }
 
 interface ToolCardProps {

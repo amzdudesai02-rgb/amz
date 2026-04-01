@@ -41,6 +41,22 @@ export const tools: Tool[] = [
     color: 'bg-green-500',
   },
   {
+    id: 'office-attendance-crm',
+    name: 'Office Attendance CRM',
+    description: 'Track office employee attendance with secure check-in/check-out, shift rules, and real-time reporting.',
+    subdomain: 'attendance.amzdudes.io',
+    status: 'coming-soon',
+    features: [
+      'Employee check-in and check-out tracking',
+      'Shift scheduling and late/early rules',
+      'GPS/geo-fence and office-location validation',
+      'Manager approvals and audit logs',
+      'Attendance reports and payroll-ready exports',
+    ],
+    icon: 'Clock',
+    color: 'bg-indigo-500',
+  },
+  {
     id: 'sop-hub',
     name: 'SOP Hub',
     description: 'Centralized hub for Standard Operating Procedures with version control and collaboration.',
