@@ -6,6 +6,7 @@ export interface Tool {
   name: string
   description: string
   subdomain: string
+  toolUrl?: string
   status: 'active' | 'coming-soon'
   features: string[]
   icon: string

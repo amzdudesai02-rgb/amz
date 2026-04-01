@@ -3,6 +3,8 @@ export interface Tool {
   name: string
   description: string
   subdomain: string
+  /** When set, card opens this URL instead of https://{subdomain} */
+  toolUrl?: string
   status: 'active' | 'coming-soon'
   features: string[]
   icon: string
@@ -39,6 +41,24 @@ export const tools: Tool[] = [
     ],
     icon: 'Clock',
     color: 'bg-indigo-500',
+  },
+  {
+    id: 'wholesale-crm',
+    name: 'Wholesale CRM',
+    description:
+      'AMZDUDES HR + CRM: wholesale accounts, contacts, and pipelines with secure team sign-in on your main domain.',
+    subdomain: 'amzdudes.io',
+    toolUrl: 'https://amzdudes.io/amzdudes-crm/public/login.php',
+    status: 'active',
+    features: [
+      'Secure sign-in for HR and CRM users',
+      'Contact and wholesale account management',
+      'Sales pipeline and deal tracking',
+      'Team workflows, tasks, and handoffs',
+      'Reporting tailored to wholesale operations',
+    ],
+    icon: 'Users',
+    color: 'bg-green-500',
   },
   {
     id: 'sop-hub',

@@ -27,7 +27,8 @@ export default function ToolCard({ tool }: ToolCardProps) {
 
   const handleClick = () => {
     if (tool.status === 'active') {
-      window.location.href = `https://${tool.subdomain}`
+      const href = tool.toolUrl?.trim() || `https://${tool.subdomain}`
+      window.location.href = href
     }
   }
 
