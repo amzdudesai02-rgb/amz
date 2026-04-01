@@ -11,6 +11,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: ${{ secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
     
     defaults:
       run:
@@ -27,24 +28,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
       
-      - name: Install Vercel CLI
-        run: npm install --global vercel@latest
-      
-      - name: Pull Vercel Environment Information
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          working-directory: ./frontend
-      
-      - name: Build Project Artifacts
-        run: vercel build --prod
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-      
-      - name: Deploy Project Artifacts to Vercel
+      - name: Deploy to Vercel (Production)
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
@@ -57,4 +41,17 @@ jobs:
         run: |
           echo "✅ Deployment completed successfully!"
           echo "Check your Vercel dashboard for the deployment URL"
+
+  missing-secrets:
+    runs-on: ubuntu-latest
+    if: ${{ secrets.VERCEL_TOKEN == '' || secrets.VERCEL_ORG_ID == '' || secrets.VERCEL_PROJECT_ID == '' }}
+    steps:
+      - name: Vercel secrets not configured
+        run: |
+          echo "⚠️ Skipping deploy: missing one or more required GitHub secrets:"
+          echo "- VERCEL_TOKEN"
+          echo "- VERCEL_ORG_ID"
+          echo "- VERCEL_PROJECT_ID"
+          echo ""
+          echo "Add them in: GitHub repo → Settings → Secrets and variables → Actions"
 
