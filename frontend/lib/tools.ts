@@ -46,9 +46,8 @@ export const tools: Tool[] = [
     id: 'wholesale-crm',
     name: 'Wholesale CRM',
     description:
-      'Wholesale CRM: accounts, contacts, and pipelines with secure team sign-in on your main domain.',
-    subdomain: 'amzdudes.io',
-    toolUrl: 'https://amzdudes.io/amzdudes-crm/public/login.php',
+      'Wholesale CRM: accounts, contacts, and pipelines with secure team sign-in at crm.amzdudes.io.',
+    subdomain: 'crm.amzdudes.io',
     status: 'active',
     features: [
       'Secure sign-in for your wholesale team',
