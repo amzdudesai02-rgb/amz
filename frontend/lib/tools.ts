@@ -32,6 +32,7 @@ export const tools: Tool[] = [
     name: 'Office Attendance CRM',
     description: 'Office attendance and employee check-in/check-out tracking with shift rules, approvals, and real-time reporting.',
     subdomain: 'crm.amzdudes.io',
+    toolUrl: 'https://amzdudes.io/amzdudes-crm/public/login.php',
     status: 'active',
     features: [
       'Employee check-in and check-out tracking',
